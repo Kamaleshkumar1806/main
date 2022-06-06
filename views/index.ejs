@@ -1,0 +1,22 @@
+<html>
+ <head>
+	 <title>todo list</title>
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="index.css" type="text/css"/>
+ </head>
+	 <body>
+	<div class="box">
+	 <h1><%= currentDate %></h1>
+	<form action="/delete" method="post">
+<%lit.forEach(function(item){%>
+	<input type="checkbox" name="checkbox" value=<%=item._id%> onChange=this.form.submit()>
+	 <p class="item"><%=item.name%></p>
+	<%})%>
+	</form>
+	<form action="/" method ="post">
+	<input type="text" name="li" placeholder="List name">
+	<button type="submit">add</button>
+	</form>
+	</div>
+	 </body>
+ </html>
