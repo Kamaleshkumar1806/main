@@ -1,0 +1,10 @@
+<%-include("header.ejs")%>
+<div class="center" >
+	 <h1 class="login" >Login</h1>
+	 <form class="log" action="/login" method="post">
+	 <input type="email" name="uemail" placeholder="Email">
+	 <input type="text" name="upassword" placeholder="Password" >
+	 <input name="sub" type="submit">
+	<p>Dont have an account <a href="/signup">signup</a>
+	 </div>
+<%-include("footer.ejs")%>

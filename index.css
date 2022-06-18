@@ -1,0 +1,15 @@
+body{
+background-color:#ccd8ed;}
+.center{
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);}
+.login	{
+   color:#5642db;
+	font-size: 40px;
+}
+.logout{
+	position:absolute;
+	top:20;
+	right:20;}
